@@ -24,7 +24,7 @@ def test_valid_login(driver):
     WebDriverWait(driver, 20).until(
         EC.presence_of_element_located((By.XPATH, "//h6[text()='Dashboard']"))
     )
-# is is
+
     assert "dashboard" in driver.current_url.lower()
     logger.info("Login Successful")
 
